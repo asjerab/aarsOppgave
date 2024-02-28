@@ -1,6 +1,10 @@
-<?php 
-session_start(); 
+<?php
+session_start();
+
+
 ?>
+
+
 
 <!DOCTYPE html>
 <html lang="en"
@@ -14,7 +18,6 @@ session_start();
 </head>
 
 <body>
-
 
     <div class="intro">
         <h1 class="Intro-text">Hurray!

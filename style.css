@@ -20,6 +20,7 @@ body {
   height: 100%;
   background-color: #2c3543;
   display: none;
+  z-index: 100;
 }
 
 .res-menu-nav {
@@ -215,11 +216,20 @@ body {
 
 .app-search-bar {
   padding: 0 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.app-search-bar i {
+  font-size: 25px;
+  cursor: pointer;
+  color: #fff;
 }
 
 .app-search-bar input {
   width: 100%;
-  max-width: 327px;
+  max-width: 280px;
   height: 38px;
   flex-shrink: 0;
   padding: 8px 5px;
@@ -288,4 +298,58 @@ body {
   font-size: 15px;
   color: #333;
   cursor: pointer;
+}
+
+.weather-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40vh;
+}
+
+.weather {
+  padding: 0 25px;
+  text-align: center;
+}
+
+.weather h1 {
+  font-size: 90px;
+  font-size: clamp(90px, 15vw, 125px);
+  color: #fff;
+  font-family: Gotham-regular;
+  margin-bottom: -5%;
+}
+
+.weather h2 {
+  color: #fff;
+  font-family: Gotham-regular;
+}
+
+
+.details {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #fff;
+  padding: 100px 0;
+  border-radius: 25px 25px 0 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.col {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0 25px;
+}
+
+.col img {
+  width: 50px;
+  height: 50px;
+}
+
+.col-info p {
+  margin: 0;
+  font-family: Gotham-regular;
 }

@@ -21,6 +21,8 @@ if (isset($_POST['submit'])) {
     $_SESSION = $row;
   }
 
+  
+
   //koble fra databasen
   mysqli_close($dbc);
 
